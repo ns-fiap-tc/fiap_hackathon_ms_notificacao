@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.infrastructure.config;
+package br.com.fiap.hacka.notificacao.infrastructure.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

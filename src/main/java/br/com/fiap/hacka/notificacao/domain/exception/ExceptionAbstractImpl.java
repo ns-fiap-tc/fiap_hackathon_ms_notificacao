@@ -1,6 +1,6 @@
-package br.com.fiap.hacka.domain.exception;
+package br.com.fiap.hacka.notificacao.domain.exception;
 
-import br.com.fiap.hacka.domain.model.ValidacaoEnum;
+import br.com.fiap.hacka.notificacao.domain.model.ValidacaoEnum;
 import lombok.Getter;
 
 public class ExceptionAbstractImpl extends RuntimeException implements ExceptionAbstract {

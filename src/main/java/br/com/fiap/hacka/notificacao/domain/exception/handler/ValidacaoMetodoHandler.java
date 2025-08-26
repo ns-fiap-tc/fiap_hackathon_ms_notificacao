@@ -1,10 +1,10 @@
-package br.com.fiap.hacka.domain.exception.handler;
+package br.com.fiap.hacka.notificacao.domain.exception.handler;
 
-import br.com.fiap.hacka.adapter.input.dto.ErroDto;
-import br.com.fiap.hacka.adapter.input.dto.ErrosDto;
-import br.com.fiap.hacka.adapter.input.dto.ValidacaoDto;
-import br.com.fiap.hacka.domain.model.ValidacaoEnum;
-import br.com.fiap.hacka.infrastructure.utils.MensagensUtils;
+import br.com.fiap.hacka.notificacao.input.dto.ErroDto;
+import br.com.fiap.hacka.notificacao.input.dto.ErrosDto;
+import br.com.fiap.hacka.notificacao.input.dto.ValidacaoDto;
+import br.com.fiap.hacka.notificacao.domain.model.ValidacaoEnum;
+import br.com.fiap.hacka.notificacao.infrastructure.utils.MensagensUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

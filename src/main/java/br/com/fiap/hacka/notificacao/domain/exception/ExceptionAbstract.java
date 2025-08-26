@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.domain.exception;
+package br.com.fiap.hacka.notificacao.domain.exception;
 
 public interface ExceptionAbstract {
     Integer getCodigo();

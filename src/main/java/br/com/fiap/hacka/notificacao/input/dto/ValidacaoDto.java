@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.adapter.input.dto;
+package br.com.fiap.hacka.notificacao.input.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

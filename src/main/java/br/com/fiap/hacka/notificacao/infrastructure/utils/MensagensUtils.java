@@ -1,6 +1,6 @@
-package br.com.fiap.hacka.infrastructure.utils;
+package br.com.fiap.hacka.notificacao.infrastructure.utils;
 
-import br.com.fiap.hacka.domain.model.IEnumLabel;
+import br.com.fiap.hacka.notificacao.domain.model.IEnumLabel;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
