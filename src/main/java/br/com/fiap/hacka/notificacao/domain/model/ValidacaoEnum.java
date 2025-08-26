@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.domain.model;
+package br.com.fiap.hacka.notificacao.domain.model;
 
 import lombok.Getter;
 

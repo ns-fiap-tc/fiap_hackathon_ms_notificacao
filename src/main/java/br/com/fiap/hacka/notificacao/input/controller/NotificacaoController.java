@@ -1,20 +1,17 @@
-package br.com.fiap.hacka.adapter.input.controller;
+package br.com.fiap.hacka.notificacao.input.controller;
 
-import br.com.fiap.hacka.application.service.WebHookService;
-import br.com.fiap.hacka.adapter.input.dto.NotificacaoDto;
+import br.com.fiap.hacka.notificacao.service.WebHookService;
+import br.com.fiap.hacka.notificacao.input.dto.NotificacaoDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @CommonsLog
 @RequiredArgsConstructor

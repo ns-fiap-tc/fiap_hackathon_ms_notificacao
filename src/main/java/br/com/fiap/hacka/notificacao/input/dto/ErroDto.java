@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.adapter.input.dto;
+package br.com.fiap.hacka.notificacao.input.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -6,13 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ErrosDto {
-    private List<ErroDto> erros;
+public class ErroDto {
+    private Integer codigo;
+    private String mensagem;
 }

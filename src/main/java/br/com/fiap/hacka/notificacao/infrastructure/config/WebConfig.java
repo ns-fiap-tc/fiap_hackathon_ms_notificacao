@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.infrastructure.config;
+package br.com.fiap.hacka.notificacao.infrastructure.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

@@ -1,7 +1,7 @@
-package br.com.fiap.hacka.application.service;
+package br.com.fiap.hacka.notificacao.service;
 
-import br.com.fiap.hacka.domain.exception.ValidacaoException;
-import br.com.fiap.hacka.domain.model.ValidacaoEnum;
+import br.com.fiap.hacka.notificacao.domain.exception.ValidacaoException;
+import br.com.fiap.hacka.notificacao.domain.model.ValidacaoEnum;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;

@@ -1,4 +1,4 @@
-package br.com.fiap.hacka.adapter.input.dto;
+package br.com.fiap.hacka.notificacao.input.dto;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;

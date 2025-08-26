@@ -1,7 +1,7 @@
-package br.com.fiap.hacka.domain.exception;
+package br.com.fiap.hacka.notificacao.domain.exception;
 
 
-import br.com.fiap.hacka.domain.model.ValidacaoEnum;
+import br.com.fiap.hacka.notificacao.domain.model.ValidacaoEnum;
 
 public class ValidacaoException extends ExceptionAbstractImpl {
     public ValidacaoException(ValidacaoEnum validation){
