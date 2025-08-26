@@ -1,0 +1,47 @@
+# run command:  docker-compose up -d
+# docker run -it lanchonete-produto-produto bash
+# mvn -DskipTests -DskipITs=true clean package spring-boot:repackage
+
+
+name: hackathon
+
+services:
+    notificacao:
+        container_name: notificacao
+        build:
+            context: .
+            dockerfile: Dockerfile
+#        env_file:
+#            - .env
+#        environment:
+#            DB_NAME: ${DB_NAME}
+#            DB_USER: ${DB_USER}
+#            DB_PASSWORD: ${DB_PASS}
+#            DB_HOST: dbprodserver
+#            DB_PORT: 5432
+        ports:
+            - 8080:8080
+        networks:
+            - app-network
+            - notificacao-network
+            - external-network
+
+networks:
+    notificacao-network:
+        name: notificacao-net
+        driver: bridge
+        internal: true
+        ipam:
+            driver: default
+            config:
+                - subnet: 10.5.2.0/24
+
+    app-network:
+        name: app-net
+        driver: bridge
+        external: true
+        
+    external-network:
+        name: lanch-net
+        driver: bridge
+        external: true
