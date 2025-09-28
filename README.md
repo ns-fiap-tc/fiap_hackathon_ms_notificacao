@@ -86,6 +86,6 @@ terraform init
 
 ## Cobertura de Testes
 O projeto contém testes automatizados, abaixo evidência de cobertura dos testes.
-
+<img width="1852" height="537" alt="Captura de tela de 2025-09-28 19-02-28" src="https://github.com/user-attachments/assets/5096dfad-17c5-461d-abf5-d0f72844ea9c" />
 
 </details>
