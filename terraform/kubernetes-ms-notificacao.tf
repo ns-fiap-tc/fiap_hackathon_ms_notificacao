@@ -71,15 +71,11 @@ resource "kubernetes_deployment" "deployment-ms-notificacao" {
           # }
 
           env {
-            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_ENDPOINT"
+            name  = "MANAGEMENT_OTLP_METRICS_EXPORT_URL"
             value = "http://otel-collector.observability.svc.cluster.local:4318/v1/metrics"
           }
           env {
-            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_PROTOCOL"
-            value = "http/protobuf"
-          }
-          env {
-            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_ENABLED"
+            name  = "MANAGEMENT_OTLP_METRICS_EXPORT_ENABLED"
             value = "true"
           }
           env {
@@ -87,8 +83,8 @@ resource "kubernetes_deployment" "deployment-ms-notificacao" {
             value = "notificacao-service"
           }
           env {
-            name  = "MANAGEMENT_METRICS_TAGS_SERVICE"
-            value = "ms-notificacao"
+            name  = "MANAGEMENT_METRICS_TAGS_ENVIRONMENT"
+            value = "production"
           }
 
           port {
