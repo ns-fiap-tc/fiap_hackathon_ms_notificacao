@@ -72,11 +72,16 @@ resource "kubernetes_deployment" "deployment-ms-notificacao" {
 
           # Configurações de Observabilidade
           env {
-            name  = "OTEL_EXPORTER_OTLP_METRICS_ENDPOINT"
+            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_ENDPOINT"
             value = "http://otel-collector.observability:4318/v1/metrics"
           }
+
           env {
-            name  = "OTEL_EXPORTER_OTLP_METRICS_ENABLED"
+            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_PROTOCOL"
+            value = "http/protobuf"
+          }
+          env {
+            name  = "MANAGEMENT_METRICS_EXPORT_OTLP_ENABLED"
             value = "true"
           }
           env {
@@ -86,10 +91,6 @@ resource "kubernetes_deployment" "deployment-ms-notificacao" {
           env {
             name  = "MANAGEMENT_METRICS_TAGS_SERVICE"
             value = "ms-notificacao"
-          }
-          env {
-            name  = "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE"
-            value = "health,info,metrics,prometheus"
           }
 
           port {
